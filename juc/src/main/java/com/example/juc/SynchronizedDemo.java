@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author yeric
- * @description:
+ * @description: 共享资源类
  * @date 2021/9/16 22:20
  */
 class Phone {
@@ -22,6 +22,10 @@ class Phone {
         System.out.println("普通方法，没有加锁");
     }
 }
+
+/**
+ * 静态同步方法，普通同步方法，普通方法加 synchronized 的情况演示
+ */
 public class SynchronizedDemo {
     public static void main(String[] args) {
         Phone phone1 = new Phone();
