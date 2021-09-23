@@ -11,7 +11,6 @@ import java.util.concurrent.RejectedExecutionHandler;
 public class DeadlockDemo {
     Object obj1 = new Object();
     Object obj2 = new Object();
-    RejectedExecutionHandler
     public void method1 () throws InterruptedException {
         synchronized (obj1){
             System.out.println(Thread.currentThread().getName());
