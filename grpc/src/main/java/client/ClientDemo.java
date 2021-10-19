@@ -1,6 +1,6 @@
 package client;
 
-import grpc.HelloGrpc;
+import client.grpc.HelloGrpc;
 import server.grpc.HelloMessage;
 import io.grpc.Channel;
 import io.grpc.ManagedChannelBuilder;

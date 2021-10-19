@@ -1,6 +1,6 @@
 package server;
 
-import grpc.HelloGrpc;
+import client.grpc.HelloGrpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
