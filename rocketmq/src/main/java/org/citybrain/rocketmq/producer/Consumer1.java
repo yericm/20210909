@@ -20,7 +20,7 @@ import java.util.List;
 public class Consumer1 {
     public static void main(String[] args) throws InterruptedException, MQClientException {
         DefaultMQPushConsumer consumerGroup = new DefaultMQPushConsumer("cg-test");
-        consumerGroup.setNamesrvAddr("112.124.238.68:9876");
+        consumerGroup.setNamesrvAddr("127.0.0.1:9876");
         consumerGroup.subscribe("topic-test", "tag-a");
         consumerGroup.registerMessageListener(
                 new MessageListenerConcurrently() {
